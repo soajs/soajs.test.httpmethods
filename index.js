@@ -37,37 +37,37 @@ function startServer(serverConfig, callback) {
 		}
 	};
 	
-	sApp.get('/myroute', (req, res) => {
+	sApp.get('/testGet', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.post('/myroute', (req, res) => {
+	sApp.post('/testPost', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.put('/myroute', (req, res) => {
+	sApp.put('/testPut', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.delete('/myroute', (req, res) => {
+	sApp.delete('/testDelete', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.patch('/myroute', (req, res) => {
+	sApp.patch('/testPatch', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.head('/myroute', (req, res) => {
+	sApp.head('/testHead', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
 	});
-	sApp.options('/myroute', (req, res) => {
+	sApp.options('/testOther', (req, res) => {
 		sReply.data.url = req.url;
 		sReply.data.method = req.method;
 		res.json(sReply);
